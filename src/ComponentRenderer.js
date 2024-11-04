@@ -4,7 +4,7 @@ import AnimationRevealPage from "helpers/AnimationRevealPage.js"
 
 import EventLandingPage from "demos/EventLandingPage.js";
 import HotelTravelLandingPage from "demos/HotelTravelLandingPage.js";
-import AgencyLandingPage from "demos/AgencyLandingPage.js";
+
 import SaaSProductLandingPage from "demos/SaaSProductLandingPage.js";
 import RestaurantLandingPage from "demos/RestaurantLandingPage.js";
 import ServiceLandingPage from "demos/ServiceLandingPage.js";
@@ -12,7 +12,6 @@ import HostingCloudLandingPage from "demos/HostingCloudLandingPage.js";
 
 import EventLandingPageImageSrc from "images/demo/EventLandingPage.jpeg";
 import HotelTravelLandingPageImageSrc from "images/demo/HotelTravelLandingPage.jpeg";
-import AgencyLandingPageImageSrc from "images/demo/AgencyLandingPage.jpeg";
 import SaaSProductLandingPageImageSrc from "images/demo/SaaSProductLandingPage.jpeg";
 import RestaurantLandingPageImageSrc from "images/demo/RestaurantLandingPage.jpeg";
 import ServiceLandingPageImageSrc from "images/demo/ServiceLandingPage.jpeg";
@@ -127,11 +126,7 @@ export const components = {
       imageSrc: EventLandingPageImageSrc,
       url: "/components/landingPages/EventLandingPage",
     },
-    AgencyLandingPage: {
-      component: AgencyLandingPage,
-      imageSrc: AgencyLandingPageImageSrc,
-      url: "/components/landingPages/AgencyLandingPage",
-    },
+
     HostingCloudLandingPage: {
       component: HostingCloudLandingPage,
       imageSrc: HostingCloudLandingPageImageSrc,
