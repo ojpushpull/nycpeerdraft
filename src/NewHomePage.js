@@ -12,10 +12,13 @@ export default function NewHomePage() {
 
     return (
     <>
+    <div>
    <light />
+   </div>
+   <div>
    <FullWidthWithImage />
-   <TwoColWithButton />
-   <TabCardGrid />
+   </div>
+  
    <MiniCenteredFooter />
 
 
