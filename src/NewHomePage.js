@@ -7,19 +7,13 @@ import TwoColWithButton from "components/features/TwoColWithButton";
 import FullWidthWithImage from "components/hero/FullWidthWithImage";
 import TabCardGrid from "components/cards/TabCardGrid";
 import MiniCenteredFooter from "components/footers/MiniCenteredFooter";
+import ServiceLandingPage from "demos/ServiceLandingPage";
 
 export default function NewHomePage() {
 
     return (
     <>
-    <div>
-   <light />
-   </div>
-   <div>
-   <FullWidthWithImage />
-   </div>
-  
-   <MiniCenteredFooter />
+    <ServiceLandingPage />
 
 
    
