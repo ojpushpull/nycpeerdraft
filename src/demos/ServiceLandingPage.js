@@ -20,7 +20,7 @@ const HighlightedText = tw.span`text-primary-500`
 export default () => {
   return (
     <AnimationRevealPage>
-      <Hero />
+      <Hero heading={"Nyc Peers For Life"}/>
       <FeatureStats/>
       <Features 
         heading={<>Amazing <HighlightedText>Features</HighlightedText></>}
