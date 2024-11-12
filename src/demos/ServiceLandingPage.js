@@ -21,27 +21,7 @@ export default () => {
   return (
     <AnimationRevealPage>
       <Hero heading={"Nyc Peers For Life"}/>
-      <FeatureStats/>
-      <Features 
-        heading={<>Amazing <HighlightedText>Features</HighlightedText></>}
-      />
-      <MainFeature
-        heading={<>Cloud built by and for <HighlightedText>Professionals</HighlightedText></>}
-      />
-      <Testimonial 
-        heading={<>Our Clients <HighlightedText>Love Us</HighlightedText></>}
-      />
-      <Pricing 
-        heading={<>Flexible <HighlightedText>Plans</HighlightedText></>}
-      />
-      <FAQ
-        heading={<>Any <HighlightedText>Questions ?</HighlightedText></>}
-      />
-      <Blog
-        subheading="Blog"
-        heading={<>We love <HighlightedText>Writing</HighlightedText></>}
-      />
-      <GetStarted/>
+      
       <Footer />
     </AnimationRevealPage>
   );
