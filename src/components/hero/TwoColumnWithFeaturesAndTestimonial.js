@@ -80,15 +80,20 @@ export default ({
             <Column>
               <Heading>{heading}</Heading>
               <Description>{description}</Description>
-             
-              <FeatureList>
+             {/*
+               <FeatureList>
                 {features.map((feature, index) => (
                   <Feature key={index}>
                     <FeatureIcon />
                     <FeatureText>{feature}</FeatureText>
                   </Feature>
+                            
+
+                          
+                
+          
                 ))}
-              </FeatureList>
+                </FeatureList>*/}
               </Column>
               <Column>
               <Image src="https://www.peersupportworks.org/wp-content/uploads/2024/03/NY-PAN-Program-Featured-Image-1024x536.png">
