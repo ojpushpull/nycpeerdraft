@@ -10,13 +10,14 @@ import { Container, ContentWithVerticalPadding } from "components/misc/Layouts.j
 import { ReactComponent as CheckboxIcon } from "feather-icons/dist/icons/check-circle.svg";
 import { ReactComponent as QuotesLeftIconBase } from "images/quotes-l.svg"
 import { ReactComponent as SvgDecoratorBlob1 } from "images/dot-pattern.svg"
+import TwoColumnWithImage from "components/testimonials/TwoColumnWithImage";
 
 const Header = tw(HeaderBase)`max-w-none`;
 const Row = tw.div`flex flex-col lg:flex-row justify-between items-center lg:pt-16 max-w-screen-2xl mx-auto sm:px-8`;
 const Column = tw.div``;
 const TextColumn = tw(Column)`mr-auto lg:mr-0 max-w-lg lg:max-w-xl xl:max-w-2xl`;
-const Heading = tw(SectionHeading)`text-center text-primary-900 leading-snug xl:text-6xl`;
-const Description = tw(SectionDescription)`text-center lg:text-base text-gray-700 max-w-lg`;
+const Heading = tw(SectionHeading)`text-left text-primary-900 leading-snug xl:text-6xl`;
+const Description = tw(SectionDescription)`text-left lg:text-base text-gray-700 max-w-lg`;
 const PrimaryButton = tw(PrimaryButtonBase)`mt-8 inline-block w-56 tracking-wide text-center py-5`;
 const FeatureList = tw.ul`mt-12 leading-loose`;
 const Feature = tw.li`flex items-center`;
@@ -39,7 +40,7 @@ const CustomerCompany = tw.p`mt-1 text-sm text-gray-500`
 export default ({
   heading = "Better, Faster and Cheaper Cloud.",
   description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-  imageSrc = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+  imageSrc = "https://www.peersupportworks.org/wp-content/uploads/2024/03/NY-PAN-Program-Featured-Image-1024x536.png",
   imageDecoratorBlob = true,
   primaryButtonUrl = "https://google.com",
   primaryButtonText = "Get Started",
@@ -76,6 +77,7 @@ export default ({
         <ContentWithVerticalPadding>
           
             
+            <Column>
               <Heading>{heading}</Heading>
               <Description>{description}</Description>
              
@@ -87,8 +89,16 @@ export default ({
                   </Feature>
                 ))}
               </FeatureList>
+              </Column>
+              <Column>
+              <Image src="https://www.peersupportworks.org/wp-content/uploads/2024/03/NY-PAN-Program-Featured-Image-1024x536.png">
+
+              </Image>
+              </Column>
+              
+             
             
-            
+              
           
         </ContentWithVerticalPadding>
       </Container>
