@@ -61,14 +61,14 @@ export default ({
       <NavLink href="/#">Resources</NavLink>
       <NavLink href="/#">Events</NavLink>
     </NavLinks>,
-   {/* } <NavLinks key={2}>
+    <NavLinks key={2}>
       <NavLink href="/#" tw="lg:ml-12!">
         Login
       </NavLink>
       <PrimaryLink css={buttonRoundedCss} href="/#">
         Sign Up
       </PrimaryLink>
-  </NavLinks> */}
+  </NavLinks> 
   ];
   return (
     <>
@@ -76,11 +76,11 @@ export default ({
       <Container>
         <ContentWithVerticalPadding>
           
-            
-            <Column>
+          <Row>
+            <TextColumn>
               <Heading>{heading}</Heading>
               <Description>{description}</Description>
-             {/*
+             
                <FeatureList>
                 {features.map((feature, index) => (
                   <Feature key={index}>
@@ -93,13 +93,14 @@ export default ({
                 
           
                 ))}
-                </FeatureList>*/}
-              </Column>
-              <Column>
+                </FeatureList>
+              </TextColumn>
+              <ImageColumn>
               <Image src="https://www.peersupportworks.org/wp-content/uploads/2024/03/NY-PAN-Program-Featured-Image-1024x536.png">
 
               </Image>
-              </Column>
+              </ImageColumn>
+              </Row>
               
              
             
