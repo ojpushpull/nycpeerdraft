@@ -61,14 +61,14 @@ export default ({
       <NavLink href="/#">Resources</NavLink>
       <NavLink href="/#">Events</NavLink>
     </NavLinks>,
-    <NavLinks key={2}>
+   {/* } <NavLinks key={2}>
       <NavLink href="/#" tw="lg:ml-12!">
         Login
       </NavLink>
       <PrimaryLink css={buttonRoundedCss} href="/#">
         Sign Up
       </PrimaryLink>
-    </NavLinks>
+  </NavLinks> */}
   ];
   return (
     <>
