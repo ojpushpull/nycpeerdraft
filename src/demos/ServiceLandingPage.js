@@ -14,6 +14,7 @@ import Testimonial from "components/testimonials/TwoColumnWithImageAndRating.js"
 import FAQ from "components/faqs/SingleCol.js";
 import GetStarted from "components/cta/GetStartedLight.js";
 import Footer from "components/footers/FiveColumnWithInputForm.js";
+import ThreeColSimple from "components/features/ThreeColSimple";
 
 const HighlightedText = tw.span`text-primary-500`
 
@@ -21,7 +22,7 @@ export default () => {
   return (
     <AnimationRevealPage>
       <Hero heading={"Nyc Peers"} description={"The website is a sidekick to anyone who wants to become or already is a peer working or living in NYC"} />
-      
+      <ThreeColSimple />
       <Footer />
     </AnimationRevealPage>
   );
