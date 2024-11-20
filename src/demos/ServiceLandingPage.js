@@ -22,8 +22,8 @@ const HighlightedText = tw.span`text-primary-500`
 const cards = [
   {
     imageSrc: StarIconImage,
-    title: "Hello",
-    description: "We gonna help u security.",
+    title: "Website built for peers.",
+    description: "Peers perform a wide variety of tasks for their clients and organizations. This site is here to help peers perform their jobs better.",
     url: "https://facebook.com"
   },
   {
