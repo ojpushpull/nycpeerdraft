@@ -3,6 +3,7 @@ import tw from "twin.macro";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 
+import BackgroundAsImage from "components/hero/BackgroundAsImage";
 import CustomizeIconImage from "images/customize-icon.svg"
 
 import Hero from "components/hero/TwoColumnWithFeaturesAndTestimonial.js";
@@ -28,20 +29,24 @@ const cards = [
   },
   {
     imageSrc: StarIconImage,
-    title: "24/7 Support",
-    description: "None fake latin",
+    title: "Trainings",
+    description: "Getting trained to become a peer or become a better peer these trainings will get you to where you want to go.",
     url: "https://youtube.com"
   },
   {
     imageSrc: CustomizeIconImage,
-    title: "COkay",
-    description: "Work and learn",
+    title: "Resources",
+    description: "NYC has so many organizations offering help knowing who and where to go can be daunting. We help find the information you need to help your clients.",
     url: "https://reddit.com"
   }
 ]
+
+const navLinks = [ ]
+
 export default () => {
   return (
     <AnimationRevealPage>
+      <BackgroundAsImage navLinks={null} links={null} />
       <Hero heading={"Nyc Peers"} description={"The website is a sidekick to anyone who wants to become or already is a peer working or living in NYC"} />
       <ThreeColSimple  cards={cards} />
       <Footer />
