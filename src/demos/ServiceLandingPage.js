@@ -2,7 +2,7 @@ import React from "react";
 import tw from "twin.macro";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
-
+import SimpleContactUs from "components/forms/SimpleContactUs";
 import BackgroundAsImage from "components/hero/BackgroundAsImage";
 import CustomizeIconImage from "images/customize-icon.svg"
 
@@ -29,7 +29,7 @@ const cards = [
   },
   {
     imageSrc: StarIconImage,
-    title: "Trainings",
+    title: "Trainings and Events",
     description: "Getting trained to become a peer or become a better peer these trainings will get you to where you want to go.",
     url: "https://youtube.com"
   },
@@ -37,6 +37,18 @@ const cards = [
     imageSrc: CustomizeIconImage,
     title: "Resources",
     description: "NYC has so many organizations offering help knowing who and where to go can be daunting. We help find the information you need to help your clients.",
+    url: "https://reddit.com"
+  },
+  {
+    imageSrc: CustomizeIconImage,
+    title: "Jobs",
+    description: "Jobs for days if youre a peer get hired.",
+    url: "https://reddit.com"
+  },
+  {
+    imageSrc: CustomizeIconImage,
+    title: "News",
+    description: "The city that never sleeps always has things happenign that impact this space make sure you dont miss a single one.",
     url: "https://reddit.com"
   }
 ]
@@ -46,9 +58,9 @@ const navLinks = [ ]
 export default () => {
   return (
     <AnimationRevealPage>
-      <BackgroundAsImage navLinks={null} links={null} />
       <Hero heading={"Nyc Peers"} description={"The website is a sidekick to anyone who wants to become or already is a peer working or living in NYC"} />
       <ThreeColSimple  cards={cards} />
+      <SimpleContactUs />
       <Footer />
     </AnimationRevealPage>
   );
